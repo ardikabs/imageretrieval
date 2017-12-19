@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<hr>
+<img class="ui centered medium image" src="{{ url_for('static', filename='example/query/'+ id_image + '.png') }}">
+<br>
+
+<div class="ui two grid">
+
+    {% if results %}
+    {% for res in results %}
+    <div class="image">    
+        <h3></h3>
+        <img src="{{ url_for('static', filename='dataset/'+ res[1]+ '.jpg') }}" >   
+        <p><strong>{{res[1]}}</strong></p> 
+    </div>
+    {% endfor %}
+    {% endif %}
+    
+</div>
+
+{% endblock %}

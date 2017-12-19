@@ -1,0 +1,42 @@
+{% extends "base.html" %}{% block content %}
+
+<hr>
+<div class="ui header">Content-Based Image Retrieval (Color-HSV) with Python</div>
+<div class="ui horizontal divider"></div>           
+<div class="ui three cards">
+    <div class="card">
+        <div class="image">
+            <a href="/search/103100" target="_blank"><img src="{{ url_for('static', filename='example/query/103100.png') }}" width='325' height='243'></a>                                
+        </div>                    
+    </div>
+    <div class="card">
+        <div class="ui image">
+            <a href="/search/108100" target="_blank"><img src="{{ url_for('static', filename='example/query/108100.png') }}" width='325' height='243'></a>                                
+        </div>                    
+    </div>
+    <div class="card">
+        <div class="ui image">
+            <a href="/search/103300" target="_blank" class="ui medium image"><img src="{{ url_for('static', filename='example/query/103300.png') }}" width='325' height='243'></a>                                
+        </div>                    
+    </div>
+</div>
+
+<div class="ui three cards">
+    <div class="card">
+        <div class="image">
+            <a href="/search/115100" target="_blank"><img src="{{ url_for('static', filename='example/query/115100.png') }}" width='325' height='243'></a>                                
+        </div>                    
+    </div>
+    <div class="card">
+        <div class="image">
+            <a href="/search/123600" target="_blank"><img src="{{ url_for('static', filename='example/query/123600.png') }}" width='325' height='243'></a>
+        </div>                    
+    </div>
+    <div class="card">
+        <div class="image">
+            <a href="/search/127502" target="_blank"><img src="{{ url_for('static', filename='example/query/127502.png') }}" width='325' height='243'></a>
+        </div>                    
+    </div>
+</div>
+
+{% endblock %}

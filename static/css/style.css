@@ -1,0 +1,8 @@
+
+html body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ui.container h4.ui.header{
+    margin-top: 2em;
+}
